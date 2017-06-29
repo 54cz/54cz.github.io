@@ -97,16 +97,19 @@
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+github搭建个人博客">
-<meta property="og:url" content="http://yoursite.com/2017/06/29/“Hexo-github搭建个人博/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/06/29/Hexo-github搭建个人博客/index.html">
 <meta property="og:site_name" content="Orange">
 <meta property="og:description" content="暑假开始了第一件事就是把博客搭建好,想着之后一边学习一边做笔记(以后回过头看的时候肯定很棒！)，说不定还能解决小伙伴们也遇到的问题，接下来进入正题开始搭建吧。  Hexo介绍Hexo是一个基于Node.js的快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页，其生成的静态网页可以托管在Github上。  超快速度 支持M">
-<meta property="og:image" content="http://yoursite.com/2017/06/29/“Hexo-github搭建个人博/hexo检查安装.png">
-<meta property="og:image" content="http://yoursite.com/2017/06/29/“Hexo-github搭建个人博/hexo默认主题.png">
-<meta property="og:updated_time" content="2017-06-29T04:51:29.885Z">
+<meta property="og:image" content="http://yoursite.com/2017/06/29/Hexo-github搭建个人博客/hexo检查安装.png">
+<meta property="og:image" content="http://yoursite.com/2017/06/29/Hexo-github搭建个人博客/hexo默认主题.png">
+<meta property="og:image" content="http://yoursite.com/2017/06/29/Hexo-github搭建个人博客/创建.png">
+<meta property="og:image" content="http://yoursite.com/2017/06/29/Hexo-github搭建个人博客/ssh位置.png">
+<meta property="og:image" content="http://yoursite.com/2017/06/29/Hexo-github搭建个人博客/https地址.png">
+<meta property="og:updated_time" content="2017-06-29T08:46:36.607Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+github搭建个人博客">
 <meta name="twitter:description" content="暑假开始了第一件事就是把博客搭建好,想着之后一边学习一边做笔记(以后回过头看的时候肯定很棒！)，说不定还能解决小伙伴们也遇到的问题，接下来进入正题开始搭建吧。  Hexo介绍Hexo是一个基于Node.js的快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页，其生成的静态网页可以托管在Github上。  超快速度 支持M">
-<meta name="twitter:image" content="http://yoursite.com/2017/06/29/“Hexo-github搭建个人博/hexo检查安装.png">
+<meta name="twitter:image" content="http://yoursite.com/2017/06/29/Hexo-github搭建个人博客/hexo检查安装.png">
 
 
 
@@ -134,7 +137,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/06/29/“Hexo-github搭建个人博/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/29/Hexo-github搭建个人博客/"/>
 
 
 
@@ -259,7 +262,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/29/“Hexo-github搭建个人博/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/29/Hexo-github搭建个人博客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Orange">
@@ -337,12 +340,26 @@
 <h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>首先创建一个文件夹,如hexo,用户存放hexo的配置文件,然后进入hexo里安装。</p>
 <p>打开命令行(cmd)进入到hexo目录中,使用npm安装hexo。输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div></pre></td></tr></table></figure></p>
 <p>检查是否安装成功，命令行输入hexo如下面出现相应信息就说明成功了。</p>
-<p><img src="/2017/06/29/“Hexo-github搭建个人博/hexo检查安装.png" alt=""></p>
-<h3 id="3-初始化博客"><a href="#3-初始化博客" class="headerlink" title="3.初始化博客"></a>3.初始化博客</h3><p>接着还是在blog目录中输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init blog   //blog是文件夹名 如果你在c：/hexo中输入此命令 则会在hexo文件夹中生存一个blog文件夹</div><div class="line">$ cd blog  //进入blog文件夹</div><div class="line">$ npm install</div></pre></td></tr></table></figure></p>
+<p><img src="/2017/06/29/Hexo-github搭建个人博客/hexo检查安装.png" alt=""></p>
+<h3 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h3><p>接着还是在blog目录中输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init blog   //blog是文件夹名 如果你在c：/hexo中输入此命令 则会在hexo文件夹中生存一个blog文件夹</div><div class="line">$ cd blog  //进入blog文件夹</div><div class="line">$ npm install</div></pre></td></tr></table></figure></p>
 <p>此时指定的文件夹目录如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">├── _config.yml  //网站的配置信息</div><div class="line">├── package.json //应用程序的信息</div><div class="line">├── scaffolds //模版 文件夹</div><div class="line">├── source //资源文件夹是存放用户资源的地方。</div><div class="line">|   ├── _drafts</div><div class="line">|   └── _posts</div><div class="line">└── themes //主题文件夹</div></pre></td></tr></table></figure></p>
 <h3 id="生成并预览"><a href="#生成并预览" class="headerlink" title="生成并预览"></a>生成并预览</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo g  </div><div class="line">$ hexo s</div></pre></td></tr></table></figure>
-<p>现在可以在(<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>) 进行预览了<br><img src="/2017/06/29/“Hexo-github搭建个人博/hexo默认主题.png" alt=""></p>
-<p>##常用命令介绍<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ hexo generate == hexo g  //生成静态文件，会在当前目录下生成一个新的叫做public的文件夹</div><div class="line">$ hexo clean //清除你生成的静态文件</div><div class="line">$ hexo server == hexo s //启动本地web服务，用于博客的预览</div><div class="line">$ hexo deploy == hexo d //部署播客到远端（比如github, heroku等平台）</div><div class="line">$ hexo new 此处为文章名 //新建文章</div></pre></td></tr></table></figure></p>
+<p>现在可以在(<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>) 进行预览了<br><img src="/2017/06/29/Hexo-github搭建个人博客/hexo默认主题.png" alt=""></p>
+<h2 id="常用命令介绍"><a href="#常用命令介绍" class="headerlink" title="常用命令介绍"></a>常用命令介绍</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ hexo generate == hexo g  //生成静态文件，会在当前目录下生成一个新的叫做public的文件夹</div><div class="line">$ hexo clean //清除你生成的静态文件</div><div class="line">$ hexo server == hexo s //启动本地web服务，用于博客的预览</div><div class="line">$ hexo deploy == hexo d //部署播客到远端（比如github, heroku等平台）</div><div class="line">$ hexo new 此处为文章名 //新建文章</div></pre></td></tr></table></figure>
+<h2 id="创建github仓库"><a href="#创建github仓库" class="headerlink" title="创建github仓库"></a>创建github仓库</h2><p>首先在<a href="https://github.com/" target="_blank" rel="external">github</a>上注册一个账号，登录后在点击右上角头像旁边的加号选择New repository<br><img src="/2017/06/29/Hexo-github搭建个人博客/创建.png" alt=""><br>Repository name 一定要填 你的账号名.github.io 例如：name.github.io 以后进入你的网站就是靠这个域名了</p>
+<h2 id="生成添加ssh密钥"><a href="#生成添加ssh密钥" class="headerlink" title="生成添加ssh密钥"></a>生成添加ssh密钥</h2><p>打开命令行(cmd)输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C &quot;Github的注册邮箱地址&quot; //注意这里C是大写</div></pre></td></tr></table></figure></p>
+<p>然后一直回车就行了，会生成一个.ssh文件夹<br>位置在<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">C:\Users\user\.ssh</div></pre></td></tr></table></figure></p>
+<p><img src="/2017/06/29/Hexo-github搭建个人博客/ssh位置.png" alt=""></p>
+<p>找到id_rsa.pub这个文件，右键以记事本的方式打开，复制里面的全部内容</p>
+<p>回到github点击右上角的头像选择Settings –&gt; SSH and GPG keys –&gt; new ssh key </p>
+<p>将复制的内容粘贴到key中，随便写个Title点击add shh key就可以了</p>
+<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>进入初始化生成的目录找到_config.yml文件打开编辑在最后deploy中添加如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: //这里填仓库地址</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<p>repo填写新建好仓库的https链接</p>
+<p><img src="https地址.png" alt=""></p>
+<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><p>安装 hexo-deployer-git<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>等一小会，访问创建仓库时的Repository name就可以看到自己的网站了</p>
 
       
     </div>
@@ -497,7 +514,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo介绍"><span class="nav-number">1.</span> <span class="nav-text">Hexo介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#环境准备"><span class="nav-number">2.</span> <span class="nav-text">环境准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装node-js"><span class="nav-number">2.1.</span> <span class="nav-text">安装node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.2.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-初始化博客"><span class="nav-number">2.3.</span> <span class="nav-text">3.初始化博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成并预览"><span class="nav-number">2.4.</span> <span class="nav-text">生成并预览</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo介绍"><span class="nav-number">1.</span> <span class="nav-text">Hexo介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#环境准备"><span class="nav-number">2.</span> <span class="nav-text">环境准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装node-js"><span class="nav-number">2.1.</span> <span class="nav-text">安装node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.2.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化博客"><span class="nav-number">2.3.</span> <span class="nav-text">初始化博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成并预览"><span class="nav-number">2.4.</span> <span class="nav-text">生成并预览</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令介绍"><span class="nav-number">3.</span> <span class="nav-text">常用命令介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建github仓库"><span class="nav-number">4.</span> <span class="nav-text">创建github仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成添加ssh密钥"><span class="nav-number">5.</span> <span class="nav-text">生成添加ssh密钥</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改配置文件"><span class="nav-number">6.</span> <span class="nav-text">修改配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署到github"><span class="nav-number">7.</span> <span class="nav-text">部署到github</span></a></li></ol></div>
             
 
           </div>
